@@ -3,32 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Registration Form</title>
 </head>
 <body>
-  <!-- Heading describing the purpose of forms -->
-  <h1>Forms are used to collect data from the user</h1>
+  <!-- Description heading for the form -->
+  <h3>Forms are used to collect data from the user</h3>
 
-  <!-- Form element with an action attribute pointing to the server-side script -->
+  <!-- Main form heading -->
+  <h2>Registration Form</h2>
+
+  <!-- Form element to collect user data -->
   <form action="/action.php">
-    <!-- Text input field -->
-    <input type="text" placeholder="Type here.....">
-    <br><br>
     
+    <!-- Text input for name -->
+    <label for="name">Enter your name:</label>
+    <br>
+    <input type="text" id="name" name="name" placeholder="Type your name...">
+    <br><br>
+
     <!-- Password input field -->
-    <input type="password" placeholder="Type password.....">
+    <label for="password">Enter your password:</label>
+    <br>
+    <input type="password" id="password" name="password" placeholder="Type your password...">
     <br><br>
     
+    <!-- Heading for class selection -->
+    <h2>Select Class</h2>
     <!-- Radio buttons for selecting a class -->
     <label for="id1">
-      <!-- Radio input for Class 11th -->
       <input type="radio" value="class 11th" name="class" id="id1">Class 11th
     </label>
     <br>
     <label for="id2">
-      <!-- Radio input for Class 12th -->
       <input type="radio" value="class 12th" name="class" id="id2">Class 12th
     </label>
+    <br><br>
+    
+    <!-- Heading for subject selection -->
+    <h2>Select Favorite Subjects</h2>
+    <!-- Checkboxes for selecting multiple subjects -->
+    <label for="math">
+      <input type="checkbox" value="math" name="subject" id="math">Math
+    </label>
+    <br>
+    <label for="science">
+      <input type="checkbox" value="science" name="subject" id="science">Science
+    </label>
+    <br>
+    <label for="computer">
+      <input type="checkbox" value="computer" name="subject" id="computer">Computer
+    </label>
+    <br><br>
+    
+    <!-- Textarea for user feedback -->
+    <label for="feedback">Your feedback:</label>
+    <br>
+    <textarea name="feedback" id="feedback" placeholder="Write your feedback here..." rows="5"></textarea>
+    <br><br>
+
+    <!-- Dropdown menu to select city -->
+    <h2>Select City</h2>
+    <label for="city">Choose your city:</label>
+    <br>
+    <select name="city" id="city">
+      <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Bangalore">Bangalore</option>
+    </select>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
   </form>
 </body>
 </html>
