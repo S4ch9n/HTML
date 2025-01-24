@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Declares the document type and specifies that the document uses HTML5 -->
+
+<html lang="en">
+<!-- The root element of an HTML document. The 'lang' attribute specifies the language of the content. -->
+<head>
+  <!-- Contains meta-information about the document (not displayed to the user) -->
+  
+  <meta charset="UTF-8">
+  <!-- Sets the character encoding for the document to UTF-8, supporting most characters. -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures the website scales properly on mobile devices. -->
+  
+  <title>Document Title</title>
+  <!-- Sets the title of the document that appears in the browser tab. -->
+   
+  <link rel="stylesheet" href="styles.css">
+  <!-- Links an external CSS file for styling the page. -->
+  
+  <script src="script.js" defer></script>
+  <!-- Links an external JavaScript file. 'defer' ensures the script runs after the HTML is parsed. -->
+</head>
+<body>
+  <!-- Contains all the visible content of the web page -->
+  
+  <header>
+    <!-- Defines a header section, typically containing a logo, navigation, or introductory content -->
+    <h1>Website Title</h1>
+    <!-- Defines a primary heading -->
+  </header>
+  
+  <nav>
+    <!-- Represents navigation links -->
+    <ul>
+      <!-- Defines an unordered list -->
+      <li><a href="#home">Home</a></li>
+      <!-- Defines a list item with a link -->
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <!-- Represents the main content of the page -->
+    <section id="home">
+      <!-- Defines a thematic section -->
+      <h2>Home Section</h2>
+      <p>Welcome to the homepage!</p>
+      <!-- Defines a paragraph -->
+    </section>
+    
+    <section id="about">
+      <h2>About Section</h2>
+      <p>About us information goes here.</p>
+    </section>
+    
+    <article>
+      <!-- Represents an independent piece of content, such as a blog post -->
+      <h3>Article Title</h3>
+      <p>This is an article.</p>
+    </article>
+  </main>
+  
+  <aside>
+    <!-- Defines content related to the main content, such as a sidebar -->
+    <h3>Related Links</h3>
+    <ul>
+      <li><a href="#">Related Link 1</a></li>
+      <li><a href="#">Related Link 2</a></li>
+    </ul>
+  </aside>
+  
+  <footer>
+    <!-- Represents footer content, such as copyright or contact information -->
+    <p>&copy; 2025 Your Website</p>
+  </footer>
+  
+  <!-- Forms -->
+  <form action="/submit" method="POST">
+    <!-- Defines a form for user input -->
+    <label for="name">Name:</label>
+    <!-- Label for an input field -->
+    <input type="text" id="name" name="name">
+    <!-- Input field for text -->
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <!-- Input field for email -->
+    
+    <button type="submit">Submit</button>
+    <!-- Button to submit the form -->
+  </form>
+  
+  <!-- Images -->
+  <img src="image.jpg" alt="Description of image">
+  <!-- Displays an image; 'alt' provides alternative text if the image cannot load -->
+  
+  <!-- Tables -->
+  <table>
+    <!-- Defines a table -->
+    <thead>
+      <!-- Table header -->
+      <tr>
+        <!-- Table row -->
+        <th>Column 1</th>
+        <!-- Table header cell -->
+        <th>Column 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table body -->
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <!-- Table data cell -->
+        <td>Row 1, Cell 2</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Multimedia -->
+  <video controls>
+    <!-- Embeds a video -->
+    <source src="video.mp4" type="video/mp4">
+    <!-- Specifies video file and format -->
+    Your browser does not support the video tag.
+  </video>
+  
+  <audio controls>
+    <!-- Embeds audio -->
+    <source src="audio.mp3" type="audio/mpeg">
+    <!-- Specifies audio file and format -->
+    Your browser does not support the audio tag.
+  </audio>
+  
+  <!-- Semantic elements -->
+  <div>
+    <!-- Generic container for content -->
+  </div>
+  <span>
+    <!-- Inline container for text -->
+  </span>
+  <strong>
+    <!-- Displays bold text -->
+  </strong>
+  <em>
+    <!-- Displays italicized text -->
+  </em>
+  <mark>
+    <!-- Highlights text -->
+  </mark>
+  
+  <!-- Script -->
+  <script>
+    // Inline JavaScript can be written here
+    console.log("Hello, World!");
+  </script>
+</body>
+</html>
